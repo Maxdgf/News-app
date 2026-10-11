@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_package = "com.maxdgf.newspaper.proto";
+option java_multiple_files = true;
+
+enum NewsSort {
+    Nothing = 0;
+    Relevancy = 1;
+    Popularity = 2;
+    PublishedAt = 3;
+}
+
+enum NewsLanguage {
+    All = 0;
+    Ar = 1;
+    De = 2;
+    En = 3;
+    Es = 4;
+    Fr = 5;
+    He = 6;
+    It = 7;
+    Nl = 8;
+    No = 9;
+    Pt = 10;
+    Ru = 11;
+    Sv = 12;
+    Ud = 13;
+    Zh = 14;
+}
+
+message EverythingEndpointSearchSettings {
+    string search_in = 1;
+    NewsSort sort_by = 2;
+    NewsLanguage language = 3;
+    string include_domains = 4;
+    string exclude_domains = 5;
+}

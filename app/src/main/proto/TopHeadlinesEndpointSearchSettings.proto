@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "com.maxdgf.newspaper.proto";
+option java_multiple_files = true;
+
+enum NewsCategory {
+    Default = 0;
+    Business = 1;
+    Entertainment = 2;
+    General = 3;
+    Health = 4;
+    Science = 5;
+    Sports = 6;
+    Technology = 7;
+}
+
+message TopHeadlinesEndpointSearchSettings {
+    bool is_us_country = 1;
+    NewsCategory category = 2;
+}
