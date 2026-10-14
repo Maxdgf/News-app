@@ -100,7 +100,6 @@ dependencies {
 
     //Other
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.google.code.gson)
     implementation(libs.androidx.paging.compose)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.compose.ui.text.google.fonts)
